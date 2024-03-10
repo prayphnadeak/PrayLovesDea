@@ -1,0 +1,123 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://maukahkamu.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://maukahkamu.likeadream.repl.co/script.js"></script>
+<head>
+<title>Pesan Untukmu</title>
+
+</head>
+<body>
+<style>
+body{background-image: url("https://i.ibb.co/7K0WrV1/dea-and-pray.jpg");background-repeat: repeat;background-size: 300% 300% 300%;transition:all .3s ease;}
+</style><div id="bodyblur"></div>
+
+<div id="konten"><div id="fotoloveu"><div class="image">
+<!-- Foto Akhir -->
+<center>
+    <img src="https://media.tenor.com/dnkXvJVb5cAAAAAM/bear-blow-a-kiss.gif" id="animasi" width="100px" height="100px"/>
+    <img src="https://media1.tenor.com/m/jvKAZYxd90QAAAAC/cute-bear.gif" id="animasi" width="100px" height="100px"/>
+    <img src="https://media.tenor.com/dnkXvJVb5cAAAAAM/bear-blow-a-kiss.gif" id="animasi" width="100px" height="100px"/>
+    </center>
+</div><span maxlength="5" id="hasiljawab"></span><span id="sp2"></span><span id="sp3"></center></span></div>
+
+<script> 
+//Teks klik love
+var a=0,finish;
+finish = "Yeaayyy!";
+//Teks klik love
+var i=0,finish2;
+finish2 = "Apapun jawabannya, kirim pesan ke WhatsApp aku ya!";  
+function play() {
+//Link Audio Bisa Diganti
+var audio = new Audio('Cinta Luar Biasa.mp3');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
+
+//Pesan WhatsApp
+ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " udah liat semuanya ><" + "%0A%0A" + nama + " " + prtnya + "%0A%0A" + "%3D%3E%20" + tnya + "%0A%0A" + "- " + dateTime;} 
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                allowOutsideClick: false,
+            });
+            async function mulai(){          	
+                var { value: nama } = await swals.fire({
+                    title: 'Nama kamu?',
+                    input: 'text',
+                    confirmButtonText: 'OK Gas',
+                    showCancelButton: false,
+                });                           
+                if(nama && nama.length < 11){
+                	play();
+                	window.nama = nama;
+                    await swals.fire('Hai, ' + nama + '!');
+                    await swals.fire('Abang mau ngomong sesuatu nih sama dirimu');
+                    await swals.fire('Tapi '+ nama +' jangan marah ya');
+                    await swals.fire('Jadi intinya begini dek...');
+                    await swals.fire('abang itu suka sama '+ nama +' &#128578');
+                    await swals.fire('abang mulai ada ketertarikan sama '+ nama );
+                    await swals.fire('sejak pertama kali kita berkenalan di Palembang waktu Natalan 2023'); 
+                    await swals.fire('berlanjut dengan kebersamaan kita di AEON Mall BSD &#128578'); 
+                    await swals.fire('hingga kebersamaan kita di PIK dan Alsut sekarang ini &#128578');
+                    await swals.fire('Kesan Dea yang ramah dan murah senyum');
+                    await swals.fire('susah untuk abang lupakan &#128578');
+                    await swals.fire('Oh ya dek, selain itu...'); 
+                    await swals.fire('abang melihat beberapa kesamaan yang bisa satukan kita:');    
+                    await swals.fire('1) Sama-sama dibina secara kerohanian oleh Perkantas');
+                    await swals.fire('2) Sama-sama dibina ASN Lulusan Sekolah Kedinasan');
+                    await swals.fire('3) Sama-sama punya keluarga terkasih di Palembang');    
+                    await swals.fire('4) dan kesamaan2 nilai hidup lainnya');      
+                    await swals.fire('yang akan terus terlihat seiring berjalannya waktu');       
+                    await swals.fire('Jujur dek, Abang ingin mengenal '+ nama +' lebih dari sekedar teman biasa &#128578');  
+                    await swals.fire('bahkan jika Tuhan izinkan...'); 
+                    await swals.fire('Abang mau kita melangkah ke jenjang yang lebih serius');     
+                    await swals.fire('Abang berharap bahwa '+ nama +' adalah pelabuhan hati terakhir abang &#128578');  
+                    await swals.fire('Abang juga berjanji akan semakin rutin berolahraga');      
+                    await swals.fire('dan juga mulai mencoba fitness kembali'); 
+                    await swals.fire('supaya abang tetap sehat & bugar');              
+                    await swals.fire('sehingga dapat menghabiskan waktu lebih banyak');   
+                    await swals.fire('bersama Tuan Putri '+ nama +' tambatan hati abang &#128578'); 
+                    prtnya = "yok mari kita sama-sama menjalaninya";
+                    //
+                    window.prtnya = prtnya;
+                    var { value: tnya } = await swals.fire({
+                    title: nama + ' ' + prtnya,
+                    input: 'text',
+                    confirmButtonText: 'Tambah Dua Torang Gas',
+                    showCancelButton: false,
+                });             
+                if(tnya && tnya.length < 11){
+                	window.tnya = tnya;
+                    document.getElementById("hasiljawab").innerHTML = "Jawaban dari&nbsp;" + nama + ":" + "&nbsp;<b>" + tnya + "</b>";
+                    await swals.fire(`Makasih ya buat responnya. Kiranya Tuhan melancarkan segala rencana & impian kita &#10084;&#65039;`);
+                    expl();
+                } else {
+                    await swals.fire('Ups!', 'Tidak boleh kosong / lebih dari 10 karakter, ya!');
+                    mulai();
+                }                 
+                //                                   
+                } else {
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');
+                    mulai();
+                }
+            }            
+            mulai();
+</script>
+
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+<script>
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 100) {
+       heartArr[0].remove()
+    }
+},100)
+</script>
+</body>
+</html>
