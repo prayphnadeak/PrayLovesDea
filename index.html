@@ -2,37 +2,41 @@
 <meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://maukahkamu.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://maukahkamu.likeadream.repl.co/script.js"></script>
 <head>
 <title>Pesan Untukmu</title>
-
+<!--Copyright 2024 by Pray Putra Hasianro Nadeak-->
+<!--Attention : Gunakan kode ini dengan bijak untuk nyatakan perasaanmu ke dia-->
 </head>
 <body>
 <style>
-body{background-image: url("https://i.ibb.co/7K0WrV1/dea-and-pray.jpg");background-repeat: repeat;background-size: 300% 300% 300%;transition:all .3s ease;}
+
+/* Bagian untuk memunculkan background foto romantis dengan pasangan*/
+/* Upload fotomu dengan pasangan di imgbb.com, lalu link hosting-nya copy-paste untuk gantikan link url di bawah ini*/
+body{background-image: url("https://i.ibb.co/7K0WrV1/dea-and-pray.jpg");
+background-repeat: repeat;background-size: 300% 300% 300%;transition:all .3s ease;}
 </style><div id="bodyblur"></div>
 
+<!-- Bagian untuk memunculkan emot beruang lucu di atas-->
+<!-- Emot bisa diganti dengan gif lain yang ada du media.tenor.com lalu copy-paste link emot nya untuk gantikan link img src di bawah ini-->
 <div id="konten"><div id="fotoloveu"><div class="image">
 <!-- Foto Akhir -->
 <center>
     <img src="https://media.tenor.com/dnkXvJVb5cAAAAAM/bear-blow-a-kiss.gif" id="animasi" width="100px" height="100px"/>
     <img src="https://media1.tenor.com/m/jvKAZYxd90QAAAAC/cute-bear.gif" id="animasi" width="100px" height="100px"/>
     <img src="https://media.tenor.com/dnkXvJVb5cAAAAAM/bear-blow-a-kiss.gif" id="animasi" width="100px" height="100px"/>
-    </center>
+</center>
 </div><span maxlength="5" id="hasiljawab"></span><span id="sp2"></span><span id="sp3"></center></span></div>
 
 <script> 
-//Teks klik love
 var a=0,finish;
 finish = "Yeaayyy!";
-//Teks klik love
 var i=0,finish2;
 finish2 = "Apapun jawabannya, kirim pesan ke WhatsApp aku ya!";  
 function play() {
-//Link Audio Bisa Diganti
+// Audio bisa diganti dengan mp3 yang sudah dimasukkan ke dalam folder kode program lalu ganti Cinta Luar Biasa.mp3 dengan lagu favoritmu
 var audio = new Audio('Cinta Luar Biasa.mp3');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
-
-//Pesan WhatsApp
- function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " udah liat semuanya ><" + "%0A%0A" + nama + " " + prtnya + "%0A%0A" + "%3D%3E%20" + tnya + "%0A%0A" + "- " + dateTime;} 
+function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " udah liat semuanya ><" + "%0A%0A" + nama + " " + prtnya + "%0A%0A" + "%3D%3E%20" + tnya + "%0A%0A" + "- " + dateTime;} 
 </script>
- 
+
+<!--Bagian box pesan romantis dimulai dari sini-->
 <script type="text/javascript">            
             var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
             const swals = Swal.mixin({
@@ -48,6 +52,9 @@ var audio = new Audio('Cinta Luar Biasa.mp3');audio.play();audio.loop=true;audio
                 if(nama && nama.length < 11){
                 	play();
                 	window.nama = nama;
+
+                    // box pesan yang muncul dapat diatur sesuai kemauandengan menambah atau mengurangi baris await swals.fire
+                    // box pesan dimulai dari sini
                     await swals.fire('Hai, ' + nama + '!');
                     await swals.fire('Abang mau ngomong sesuatu nih sama dirimu');
                     await swals.fire('Tapi '+ nama +' jangan marah ya');
@@ -75,6 +82,8 @@ var audio = new Audio('Cinta Luar Biasa.mp3');audio.play();audio.loop=true;audio
                     await swals.fire('supaya abang tetap sehat & bugar');              
                     await swals.fire('sehingga dapat menghabiskan waktu lebih banyak');   
                     await swals.fire('bersama Tuan Putri '+ nama +' tambatan hati abang &#128578'); 
+                    // box pesan berakhir sini
+        
                     prtnya = "yok mari kita sama-sama menjalaninya";
                     //
                     window.prtnya = prtnya;
@@ -101,6 +110,7 @@ var audio = new Audio('Cinta Luar Biasa.mp3');audio.play();audio.loop=true;audio
             }            
             mulai();
 </script>
+<!--Bagian box pesan romantis berakhir dari sini-->
 
 <!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
 <script>
